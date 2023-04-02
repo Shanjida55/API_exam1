@@ -1,0 +1,8 @@
+npm install -g newman
+
+Install: npm install -g newman-reporter-html
+	npm install -g newman-reporter-htmlextra
+
+newman run Exm1.postman_collection.json -e My_project1.postman_environment.json
+newman run Exm1.postman_collection.json -e Exm1.postman_environment.json -r cli,html
+newman run Exm1.postman_collection.json -e Exm1.postman_environment.json -r cli,htmlextra
